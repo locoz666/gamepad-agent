@@ -1,0 +1,102 @@
+client:
+  arrowmap:
+    down:
+      type: axis
+      index: 7
+      normalvalue: 32768
+    left:
+      type: axis
+      index: 6
+      normalvalue: -32767
+    right:
+      type: axis
+      index: 6
+      normalvalue: 32768
+    up:
+      type: axis
+      index: 7
+      normalvalue: -32767
+  buttonmap:
+    a:
+      type: button
+      index: 2
+      normalvalue: 0
+    b:
+      type: button
+      index: 1
+      normalvalue: 0
+    home:
+      type: button
+      index: 12
+      normalvalue: 0
+    l:
+      type: button
+      index: 4
+      normalvalue: 0
+    ls:
+      type: button
+      index: 10
+      normalvalue: 0
+    r:
+      type: button
+      index: 5
+      normalvalue: 0
+    rs:
+      type: button
+      index: 11
+      normalvalue: 0
+    select:
+      type: button
+      index: 8
+      normalvalue: 0
+    start:
+      type: button
+      index: 9
+      normalvalue: 0
+    x:
+      type: button
+      index: 3
+      normalvalue: 0
+    "y":
+      type: button
+      index: 0
+      normalvalue: 0
+    zl:
+      type: button
+      index: 6
+      normalvalue: 0
+    zr:
+      type: button
+      index: 7
+      normalvalue: 0
+  joystickmap:
+    lsx:
+      type: axis
+      index: 0
+      normalvalue: 0
+    lsy:
+      type: axis
+      index: 1
+      normalvalue: 0
+    rsx:
+      type: axis
+      index: 2
+      normalvalue: 0
+    rsy:
+      type: axis
+      index: 3
+      normalvalue: 0
+  serverhost: 192.168.66.220
+  serverport: 50051
+  triggermap:
+    l:
+      type: axis
+      index: 5
+      normalvalue: 0
+    r:
+      type: axis
+      index: 4
+      normalvalue: 0
+server:
+  listen: 50051
+type: client
