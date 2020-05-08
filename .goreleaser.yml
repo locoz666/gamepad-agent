@@ -3,9 +3,9 @@
 before:
   hooks:
     # You may remove this if you don't use go modules.
-    - go mod download
+    - cd ./src && go mod download
     # you may remove this if you don't need go generate
-    - go generate ./...
+    - cd ./src && go generate ./...
 builds:
   - env:
       - CGO_ENABLED=0
@@ -20,6 +20,7 @@ builds:
     goarm:
       - 6
       - 7
+    dir: src
 archives:
   - replacements:
       linux: Linux
@@ -29,9 +30,9 @@ archives:
       amd64: x64
     format: zip
     files:
-      - ../example_config/*
-      - ../pi-joystick/*
-      - ../scripts/*
+      - example_config/*
+      - pi-joystick/*
+      - scripts/*
     name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}{{ if .Mips }}_{{ .Mips }}{{ end }}"
 checksum:
   name_template: 'checksums.txt'
