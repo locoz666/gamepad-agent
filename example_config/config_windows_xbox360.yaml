@@ -85,7 +85,7 @@ client:
         - start
       outkey: home
   serverhost: 192.168.66.220
-  serverport: 50051
+  serverport: 9999
   triggermap:
     zl:
       type: axis
@@ -96,5 +96,5 @@ client:
       index: 2
       normalvalue: -32639
 server:
-  listen: 50051
+  listen: 9999
 type: client

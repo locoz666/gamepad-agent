@@ -87,7 +87,7 @@ client:
       index: 3
       normalvalue: 0
   serverhost: 192.168.66.220
-  serverport: 50051
+  serverport: 9999
   triggermap:
     l:
       type: axis
@@ -98,5 +98,5 @@ client:
       index: 4
       normalvalue: 0
 server:
-  listen: 50051
+  listen: 9999
 type: client
