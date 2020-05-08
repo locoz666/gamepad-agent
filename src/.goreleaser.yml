@@ -29,7 +29,10 @@ archives:
       amd64: x64
     format: zip
     files:
-      - example_config/*
+      - ../example_config/*
+      - ../pi-joystick/*
+      - ../scripts/*
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}{{ if .Mips }}_{{ .Mips }}{{ end }}"
 checksum:
   name_template: 'checksums.txt'
 snapshot:
